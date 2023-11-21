@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include masar_amc_qc *.css
+recursive-include masar_amc_qc *.csv
+recursive-include masar_amc_qc *.html
+recursive-include masar_amc_qc *.ico
+recursive-include masar_amc_qc *.js
+recursive-include masar_amc_qc *.json
+recursive-include masar_amc_qc *.md
+recursive-include masar_amc_qc *.png
+recursive-include masar_amc_qc *.py
+recursive-include masar_amc_qc *.svg
+recursive-include masar_amc_qc *.txt
+recursive-exclude masar_amc_qc *.pyc
