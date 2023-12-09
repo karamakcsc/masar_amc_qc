@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{material_type}-{item_code}-{YYYY}-{######}",
+ "creation": "2023-11-22 03:19:02.809682",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "is_enable",
+  "section_break_ovqeo",
+  "item_code",
+  "item_name",
+  "prim_raw_material",
+  "batch_no",
+  "column_break_gyq8r",
+  "posting_date",
+  "material_type",
+  "sec_raw_material",
+  "serial_no",
+  "section_break_fwrvz",
+  "workstation_type",
+  "bn",
+  "column_break_rttsd",
+  "case_no",
+  "ln",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Product Batching",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gyq8r",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prim_raw_material",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Primary Raw Material",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sec_raw_material",
+   "fieldtype": "Link",
+   "label": "Secondary Raw Material",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "workstation_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Workstation Type",
+   "options": "Workstation Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Data",
+   "label": "Serial no"
+  },
+  {
+   "fieldname": "section_break_fwrvz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_rttsd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Batch No",
+   "options": "Batch",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fetch_from": "item_code.custom_material_type",
+   "fieldname": "material_type",
+   "fieldtype": "Data",
+   "label": "Material Type"
+  },
+  {
+   "fieldname": "case_no",
+   "fieldtype": "Int",
+   "label": "Case Number",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "1",
+   "fieldname": "is_enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  },
+  {
+   "fieldname": "section_break_ovqeo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bn",
+   "fieldtype": "Data",
+   "label": "BN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ln",
+   "fieldtype": "Int",
+   "label": "LN",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-22 04:52:41.115478",
+ "modified_by": "Administrator",
+ "module": "MASAR AMC_QC",
+ "name": "Product Batching",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{neck_size}-{neck_type}",
+ "creation": "2023-11-22 00:49:55.141073",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "neck_size",
+  "neck_type",
+  "column_break_1yujk",
+  "posting_date",
+  "is_enable"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_1yujk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_enable",
+   "fieldtype": "Check",
+   "label": "Enable"
+  },
+  {
+   "fieldname": "neck_size",
+   "fieldtype": "Data",
+   "label": "Neck Size",
+   "reqd": 1
+  },
+  {
+   "fieldname": "neck_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Neck Type",
+   "options": "\nSCREW TYPE",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-22 00:55:30.449872",
+ "modified_by": "Administrator",
+ "module": "MASAR AMC_QC",
+ "name": "Neck Finish Type",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-21 23:41:32.513839",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "dimension_name",
+  "dimension_abbr",
+  "value",
+  "column_break_ht1wa",
+  "upper_tolerance",
+  "lower_tolerance"
+ ],
+ "fields": [
+  {
+   "fieldname": "dimension_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Dimension Name",
+   "options": "Item Standard Dimension"
+  },
+  {
+   "fieldname": "upper_tolerance",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Upper Tolerance"
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Value"
+  },
+  {
+   "fieldname": "column_break_ht1wa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "dimension_name.dimension_abbr",
+   "fieldname": "dimension_abbr",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Dimension abbreviation"
+  },
+  {
+   "fieldname": "lower_tolerance",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Lower Tolerance"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-27 00:41:00.648827",
+ "modified_by": "Administrator",
+ "module": "MASAR AMC_QC",
+ "name": "Item Standard Dimension Line",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}

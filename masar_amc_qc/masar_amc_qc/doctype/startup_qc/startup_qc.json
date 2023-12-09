@@ -1,0 +1,186 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-11-26 22:43:14.951615",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "item_code",
+  "material_type",
+  "batch_no",
+  "bn",
+  "workstation_type",
+  "shift",
+  "column_break_jn4qy",
+  "date",
+  "item_name",
+  "raw_material",
+  "serial_no",
+  "ln",
+  "station_no",
+  "sample_no",
+  "item_dimensions_section",
+  "item_dimensions",
+  "notes_section",
+  "notes",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": ".#######"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Code",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_jn4qy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "batch_no.prim_raw_material",
+   "fieldname": "raw_material",
+   "fieldtype": "Data",
+   "label": "Raw Material"
+  },
+  {
+   "fetch_from": "batch_no.serial_no",
+   "fieldname": "serial_no",
+   "fieldtype": "Data",
+   "label": "Serial No"
+  },
+  {
+   "fetch_from": "batch_no.bn",
+   "fieldname": "bn",
+   "fieldtype": "Data",
+   "label": "BN"
+  },
+  {
+   "fetch_from": "batch_no.ln",
+   "fieldname": "ln",
+   "fieldtype": "Int",
+   "label": "LN"
+  },
+  {
+   "fieldname": "station_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Station No",
+   "options": "Workstation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sample_no",
+   "fieldtype": "Data",
+   "label": "Sample No"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Data",
+   "label": "Date"
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Select",
+   "label": "Shift",
+   "options": "\nA\nB\nC",
+   "reqd": 1
+  },
+  {
+   "fieldname": "batch_no",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Batch No",
+   "options": "Product Batching",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "batch_no.workstation_type",
+   "fieldname": "workstation_type",
+   "fieldtype": "Link",
+   "label": "Workstation Type",
+   "options": "Workstation Type"
+  },
+  {
+   "fetch_from": "item_code.custom_material_type",
+   "fieldname": "material_type",
+   "fieldtype": "Data",
+   "label": "Material Type"
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "item_dimensions_section",
+   "fieldtype": "Section Break",
+   "label": "Item Dimensions"
+  },
+  {
+   "fieldname": "item_dimensions",
+   "fieldtype": "Table",
+   "label": "Item Dimensions",
+   "options": "Item Standard Dimension Line"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text Editor",
+   "label": "Notes"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "notes_section",
+   "fieldtype": "Section Break",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Startup QC",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-27 00:48:11.181531",
+ "modified_by": "Administrator",
+ "module": "MASAR AMC_QC",
+ "name": "Startup QC",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

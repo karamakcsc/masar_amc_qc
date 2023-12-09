@@ -125,7 +125,9 @@ app_license = "MIT"
 #		"on_trash": "method"
 #	}
 # }
-
+doctype_js = {
+   "Item" : "custom/item/item.js",
+ }
 # Scheduled Tasks
 # ---------------
 
@@ -215,3 +217,26 @@ app_license = "MIT"
 # auth_hooks = [
 #	"masar_amc_qc.auth.validate"
 # ]
+fixtures = [
+    {"dt": "Custom Field", "filters": [
+        [
+            "name", "in", [
+                "Item-custom_standard_dimension",
+                "Item-custom_item_dimensions",
+                "Item-custom_product_image",
+                "Item-custom_attach_image",
+                "Item-custom_image",
+                "Item-custom_item_spec",
+                "Item-custom_material_type",
+                "Item-custom_column_break_w7tht",
+                "Item-custom_product_color",
+                "Item-custom_neck_finish_type",
+                "Item-custom_condition__note",
+                "Item-custom_storage_condition",
+                "Item-custom_column_break_phmgj",
+                "Item-custom_note",
+                "Item-custom_doc_ref"
+            ]
+        ]
+    ]}
+]
