@@ -1,0 +1,152 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"DSXMMyxjpW\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">AMC QC</span>\",\"col\":12}},{\"id\":\"zimHOmnU8H\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"nlwuAmbMgn\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item\",\"col\":3}},{\"id\":\"TDYVtctlys\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Startup QC\",\"col\":3}},{\"id\":\"nAZex97p1z\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"J8GmTvIxZ9\",\"type\":\"card\",\"data\":{\"card_name\":\"Master Data\",\"col\":4}},{\"id\":\"rRCE9wEseC\",\"type\":\"card\",\"data\":{\"card_name\":\"Setting\",\"col\":4}}]",
+ "creation": "2023-12-09 16:45:03.746271",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "color-review-points",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "AMC QC",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Master Data",
+   "link_count": 3,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item",
+   "link_count": 0,
+   "link_to": "Item",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Startup QC",
+   "link_count": 0,
+   "link_to": "Startup QC",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Product Batching",
+   "link_count": 0,
+   "link_to": "Product Batching",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Setting",
+   "link_count": 6,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item Group",
+   "link_count": 0,
+   "link_to": "Item Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Material Type",
+   "link_count": 0,
+   "link_to": "Material Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Neck Finish Type",
+   "link_count": 0,
+   "link_to": "Neck Finish Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Product Color",
+   "link_count": 0,
+   "link_to": "Product Color",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item Family",
+   "link_count": 0,
+   "link_to": "Item Family",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Item Standard Dimension",
+   "link_count": 0,
+   "link_to": "Item Standard Dimension",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-12-09 16:53:41.390317",
+ "modified_by": "Administrator",
+ "module": "MASAR AMC_QC",
+ "name": "AMC QC",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 23.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Startup QC",
+   "link_to": "Startup QC",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Item",
+   "link_to": "Item",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "AMC QC"
+}
