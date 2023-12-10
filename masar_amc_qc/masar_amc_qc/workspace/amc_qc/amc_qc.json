@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"DSXMMyxjpW\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">AMC QC</span>\",\"col\":12}},{\"id\":\"zimHOmnU8H\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"nlwuAmbMgn\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item\",\"col\":3}},{\"id\":\"TDYVtctlys\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Startup QC\",\"col\":3}},{\"id\":\"nAZex97p1z\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"J8GmTvIxZ9\",\"type\":\"card\",\"data\":{\"card_name\":\"Master Data\",\"col\":4}},{\"id\":\"rRCE9wEseC\",\"type\":\"card\",\"data\":{\"card_name\":\"Setting\",\"col\":4}}]",
+ "content": "[{\"id\":\"DSXMMyxjpW\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">AMC QC</span>\",\"col\":12}},{\"id\":\"zimHOmnU8H\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Your Shortcuts</b></span>\",\"col\":12}},{\"id\":\"nlwuAmbMgn\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item\",\"col\":3}},{\"id\":\"AOcwbnEhOP\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Product Batching\",\"col\":3}},{\"id\":\"TDYVtctlys\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Startup QC\",\"col\":3}},{\"id\":\"nAZex97p1z\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"J8GmTvIxZ9\",\"type\":\"card\",\"data\":{\"card_name\":\"Master Data\",\"col\":4}},{\"id\":\"rRCE9wEseC\",\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}},{\"id\":\"Vwuj3a1vuR\",\"type\":\"card\",\"data\":{\"card_name\":\"Stations Settings\",\"col\":4}}]",
  "creation": "2023-12-09 16:45:03.746271",
  "custom_blocks": [],
  "docstatus": 0,
@@ -33,16 +33,6 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Startup QC",
-   "link_count": 0,
-   "link_to": "Startup QC",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
    "label": "Product Batching",
    "link_count": 0,
    "link_to": "Product Batching",
@@ -53,7 +43,17 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Setting",
+   "label": "Startup QC",
+   "link_count": 0,
+   "link_to": "Startup QC",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Settings",
    "link_count": 6,
    "onboard": 0,
    "type": "Card Break"
@@ -117,9 +117,37 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Stations Settings",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Workstation Type",
+   "link_count": 0,
+   "link_to": "Workstation Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Workstation",
+   "link_count": 0,
+   "link_to": "Workstation",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2023-12-09 16:53:41.390317",
+ "modified": "2023-12-10 10:28:37.322093",
  "modified_by": "Administrator",
  "module": "MASAR AMC_QC",
  "name": "AMC QC",
@@ -131,6 +159,14 @@
  "roles": [],
  "sequence_id": 23.0,
  "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Product Batching",
+   "link_to": "Product Batching",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
   {
    "color": "Grey",
    "doc_view": "List",
